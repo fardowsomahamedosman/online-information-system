@@ -1,6 +1,3 @@
-// ----------------------
-// DOM
-// ----------------------
 const form = document.getElementById('contactForm');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -11,9 +8,7 @@ const emailError = document.getElementById('emailError');
 const messageError = document.getElementById('messageError');
 const successMessage = document.getElementById('successMessage');
 
-// ----------------------
-// Validation Functions
-// ----------------------
+
 function validateName() {
     if (nameInput.value.trim() === "") {
         nameError.textContent = "Name is required";
@@ -55,15 +50,13 @@ function validateMessage() {
     }
 }
 
-// ----------------------
-// Events
-// ----------------------
+
 nameInput.addEventListener('input', validateName);
 emailInput.addEventListener('input', validateEmail);
 messageInput.addEventListener('input', validateMessage);
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); 
     
     const nameValid = validateName();
     const emailValid = validateEmail();
@@ -73,7 +66,7 @@ form.addEventListener('submit', function(e) {
         successMessage.textContent = "Thank you! Your message has been sent successfully.";
         successMessage.style.color = "green";
         form.reset();
-        // Reset borders
+        
         nameInput.style.border = "";
         emailInput.style.border = "";
         messageInput.style.border = "";

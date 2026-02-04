@@ -3,8 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Information System - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home - Online Information System</title>
+
+    <!-- CSS Ku dhex jira HTML -->
+    <style>
+        /* ===== General Styles ===== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0077cc;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* ===== Responsive ===== */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,15 +97,11 @@
         <section class="intro">
             <h2>Welcome to the Online Information System</h2>
             <p>This system provides students and professionals with easy access to information, resources, and support to make their work more efficient and organized.</p>
-	
-</section>
-
-	
-
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Online Information System | All rights reserved</p>
+        <p>&copy; 2026 Online Information System </p>
     </footer>
 </body>
 </html>
